@@ -28,7 +28,10 @@ export async function searxng_search(
     format: "json"
   };
 
-  const url = process.env.SEARXNG_ENDPOINT!;
+  const url = process.env.SEARXNG_ENDPOINT as string;
+  if (!url) {
+    console.error(`SEARXNG_ENDPOINT environment variable is not set`);
+  }
 
   try {
     const response = await axios.get(url, {
