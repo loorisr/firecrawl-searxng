@@ -20,11 +20,11 @@ export async function searxng_search(
 ): Promise<SearchResult[]> {
   const params = {
     q: q,
-    hl: options.lang,
-    gl: options.country,
-    location: options.location,
-    num: options.num_results,
-    page: options.page ?? 1,
+    language: options.lang,
+    // gl: options.country, //not possible with SearXNG
+    // location: options.location, //not possible with SearXNG
+    // num: options.num_results, //not possible with SearXNG
+    pageno: options.page ?? 1,
     format: "json"
   };
 
@@ -32,9 +32,14 @@ export async function searxng_search(
   if (!url) {
     console.error(`SEARXNG_ENDPOINT environment variable is not set`);
   }
+  // Remove trailing slash if it exists
+  const cleanedUrl = url.endsWith('/') ? url.slice(0, -1) : url;
+
+  // Concatenate "/search" to the cleaned URL
+  const finalUrl = cleanedUrl + "/search";
 
   try {
-    const response = await axios.get(url, {
+    const response = await axios.get(finalUrl, {
       headers: {
         "Content-Type": "application/json",
       },
