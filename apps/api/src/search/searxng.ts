@@ -31,13 +31,12 @@ export async function searxng_search(
   const url = process.env.SEARXNG_ENDPOINT as string;
   if (!url) {
     console.error(`SEARXNG_ENDPOINT environment variable is not set`);
-  } else {
+  }
   // Remove trailing slash if it exists
   const cleanedUrl = url.endsWith('/') ? url.slice(0, -1) : url;
 
   // Concatenate "/search" to the cleaned URL
   const finalUrl = cleanedUrl + "/search";
-}
 
   try {
     const response = await axios.get(finalUrl, {
