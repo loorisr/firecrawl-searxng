@@ -1,3 +1,9 @@
+# Fork
+Fork adding [searxng](https://github.com/searxng/searxng) compatibility for the /search endpoint
+
+added variable: SEARXNG_ENDPOINT=https://you-searxng-instance
+
+#
 <h3 align="center">
   <a name="readme-top"></a>
   <img
