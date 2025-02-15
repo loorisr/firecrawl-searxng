@@ -40,7 +40,7 @@ export async function searxng_search(
 
     const data = response.data;
 
-    if (data && Array.isArray(data.map)) {
+    if (data && Array.isArray(data.results)) {
       return data.results.map((a: any) => ({
         url: a.url,
         title: a.title,
