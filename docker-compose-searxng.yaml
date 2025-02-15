@@ -1,0 +1,18 @@
+services:      
+  searxng:
+    container_name: searxng
+    image: searxng/searxng:latest
+    environment:
+      - BASE_URL=YOUR_SEARXNG_URL
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - /home/docker/searxng:/etc/searxng ## you need to edit settings.yml to add json in the search/formats section
+    restart: unless-stopped
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+      - DAC_OVERRIDE
