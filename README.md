@@ -16,6 +16,10 @@ https://docs.searxng.org/admin/settings/settings_search.html
 
 You can also look at https://github.com/thadius83/firecrawl-customgoogle for a Google Custom Search Engine endpoint
 
+## Docker hub image
+
+`docker pull loorisr/firecrawl-searxng:latest`
+
 #
 <h3 align="center">
   <a name="readme-top"></a>
