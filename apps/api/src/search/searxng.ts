@@ -28,7 +28,7 @@ export async function searxng_search(
     format: "json"
   };
 
-  const url = process.env.SEARXNG_ENDPOINT;
+  const url = process.env.SEARXNG_ENDPOINT!;
 
   try {
     const response = await axios.get(url, {
