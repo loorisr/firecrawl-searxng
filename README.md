@@ -1,7 +1,20 @@
-# Fork
-Fork adding [searxng](https://github.com/searxng/searxng) compatibility for the /search endpoint
+# Fork of Firecrawl with SearXNG search endpoint
 
-added variable: SEARXNG_ENDPOINT=https://you-searxng-instance
+This fork adds [SearXNG](https://github.com/searxng/searxng) compatibility for the /search endpoint
+
+New env variable: SEARXNG_ENDPOINT=https://your-searxng-instance
+
+This instance needs to have json output format activated on your SearXNG instance.
+
+````yaml
+search:
+  formats:
+    - html
+    - json
+````
+https://docs.searxng.org/admin/settings/settings_search.html
+
+You can also look at https://github.com/thadius83/firecrawl-customgoogle for a Google Custom Search Engine endpoint
 
 #
 <h3 align="center">
