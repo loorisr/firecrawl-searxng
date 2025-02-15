@@ -20,6 +20,10 @@ You can also look at https://github.com/thadius83/firecrawl-customgoogle for a G
 
 `docker pull loorisr/firecrawl-searxng:latest`
 
+## Docker compose
+
+See [docker-compose-full.yaml](https://github.com/loorisr/firecrawl-searxng/blob/main/docker-compose-full.yaml) for a full stack with SearXNG
+
 #
 <h3 align="center">
   <a name="readme-top"></a>
