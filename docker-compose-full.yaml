@@ -1,0 +1,91 @@
+x-common-service: &common-service
+  image: loorisr/firecrawl-searxng:latest
+  #build: https://github.com/loorisr/firecrawl-searxng.git#main:apps/api  # to build the latest version
+  ulimits:
+    nofile:
+      soft: 65535
+      hard: 65535
+  networks:
+    - backend
+
+services:
+  playwright-service:
+    image: loorisr/firecrawl-playwright-service-ts
+    #build: https://github.com/mendableai/firecrawl.git#main:apps/playwright-service-ts   # to build the latest version
+    environment:
+      - PORT=3000
+      - BLOCK_MEDIA=true # or false, as you want
+    networks:
+      - backend
+
+  api:
+    <<: *common-service
+    environment:
+      REDIS_URL: redis://redis:6379
+      REDIS_RATE_LIMIT_URL: redis://redis:6379
+      PLAYWRIGHT_MICROSERVICE_URL: http://playwright-service:3000/scrape
+      SEARXNG_ENDPOINT: http://searxng:8080
+      USE_DB_AUTHENTICATION: false
+      PORT: 3002
+      OPENAI_API_KEY: your_openai_api_key
+      HOST: 0.0.0.0
+      FLY_PROCESS_GROUP: app
+    depends_on:
+      - redis
+      - playwright-service
+    ports:
+      - "3002:3002"
+    command: [ "pnpm", "run", "start:production" ]
+
+  worker:
+    <<: *common-service
+    environment:
+      REDIS_URL: redis://redis:6379
+      REDIS_RATE_LIMIT_URL: redis://redis:6379
+      PLAYWRIGHT_MICROSERVICE_URL: http://playwright-service:3000/scrape
+      SEARXNG_ENDPOINT: http://searxng:8080
+      USE_DB_AUTHENTICATION: false
+      OPENAI_API_KEY: your_openai_api_key
+      PORT: 3002
+      HOST: 0.0.0.0
+      FLY_PROCESS_GROUP: worker
+    depends_on:
+      - redis
+      - playwright-service
+      - api
+      - searxng
+    command: [ "pnpm", "run", "workers" ]
+
+  redis:
+    image: redis:alpine
+    networks:
+      - backend
+    command: redis-server --bind 0.0.0.0
+    volumes:
+    - firecrawl-redis:/data
+ 
+  searxng:
+    container_name: searxng
+    image: searxng/searxng:latest
+    environment:
+      - BASE_URL=http://searxng:8080
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - /home/docker/searxng:/etc/searxng # edit settings.yml to enable json output
+    networks:
+      - net_ipv4
+    restart: unless-stopped
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+      - DAC_OVERRIDE
+      
+networks:
+  backend:
+    driver: bridge
+volumes:
+  firecrawl-redis:
