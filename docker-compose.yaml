@@ -54,7 +54,7 @@ services:
       FLY_PROCESS_GROUP: app
       SEARXNG_ENDPOINT: ${SEARXNG_ENDPOINT}
     depends_on:
-      - redis
+      - valkey
       - playwright-service
     ports:
       - "3002:3002"
@@ -63,8 +63,8 @@ services:
   worker:
     <<: *common-service
     environment:
-      REDIS_URL: ${REDIS_URL:-redis://redis:6379}
-      REDIS_RATE_LIMIT_URL: ${REDIS_URL:-redis://redis:6379}
+      REDIS_URL: ${REDIS_URL:-redis://valkey:6379}
+      REDIS_RATE_LIMIT_URL: ${REDIS_URL:-redis://valkey:6379}
       PLAYWRIGHT_MICROSERVICE_URL: ${PLAYWRIGHT_MICROSERVICE_URL:-http://playwright-service:3000/scrape}
       USE_DB_AUTHENTICATION: ${USE_DB_AUTHENTICATION}
       PORT: ${PORT:-3002}
@@ -89,16 +89,15 @@ services:
       FLY_PROCESS_GROUP: worker
       SEARXNG_ENDPOINT: ${SEARXNG_ENDPOINT}
     depends_on:
-      - redis
+      - valkey
       - playwright-service
       - api
     command: [ "pnpm", "run", "workers" ]
 
-  redis:
-    image: redis:alpine
+  valkey:
+    image: valkey/valkey:alpine
     networks:
       - backend
-    command: redis-server --bind 0.0.0.0
 
 networks:
   backend:
