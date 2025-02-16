@@ -8,6 +8,7 @@ New env variable:
 * `SEARXNG_ENGINES` see https://docs.searxng.org/user/configured_engines.html
 
 Migrate to Node 22 LTS for playwright API. Reduce image size from 2.4Go to 1.6 Go
+Migrate to Node 22 LTS for API. Reduce image size from 1.4Go to 0.8 Go
 
 This instance needs to have json output format activated on your SearXNG instance.
 
