@@ -1,4 +1,4 @@
-FROM node:18-slim
+FROM node:22-slim
 
 WORKDIR /usr/src/app
 COPY package*.json ./
@@ -7,7 +7,7 @@ RUN npm install
 COPY . .
 
 # Install Playwright dependencies
-RUN npx playwright install --with-deps
+RUN npx playwright install --with-deps chromium
 
 RUN npm run build
 
