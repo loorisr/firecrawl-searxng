@@ -24,6 +24,8 @@ export async function searxng_search(
     // gl: options.country, //not possible with SearXNG
     // location: options.location, //not possible with SearXNG
     // num: options.num_results, //not possible with SearXNG
+    engines: process.env.SEARXNG_ENGINES || "general",
+    categories: process.env.SEARXNG_CATEGORIES || "google",
     pageno: options.page ?? 1,
     format: "json"
   };
