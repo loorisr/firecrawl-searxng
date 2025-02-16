@@ -21,8 +21,8 @@ services:
   api:
     <<: *common-service
     environment:
-      REDIS_URL: redis://redis:6379
-      REDIS_RATE_LIMIT_URL: redis://redis:6379
+      REDIS_URL: redis://valkey:6379
+      REDIS_RATE_LIMIT_URL: redis://valkey:6379
       PLAYWRIGHT_MICROSERVICE_URL: http://playwright-service:3000/scrape
       SEARXNG_ENDPOINT: http://searxng:8080
       USE_DB_AUTHENTICATION: false
@@ -31,7 +31,7 @@ services:
       HOST: 0.0.0.0
       FLY_PROCESS_GROUP: app
     depends_on:
-      - redis
+      - valkey
       - playwright-service
     ports:
       - "3002:3002"
@@ -40,8 +40,8 @@ services:
   worker:
     <<: *common-service
     environment:
-      REDIS_URL: redis://redis:6379
-      REDIS_RATE_LIMIT_URL: redis://redis:6379
+      REDIS_URL: redis://valkey:6379
+      REDIS_RATE_LIMIT_URL: redis://valkey:6379
       PLAYWRIGHT_MICROSERVICE_URL: http://playwright-service:3000/scrape
       SEARXNG_ENDPOINT: http://searxng:8080
       USE_DB_AUTHENTICATION: false
@@ -50,19 +50,18 @@ services:
       HOST: 0.0.0.0
       FLY_PROCESS_GROUP: worker
     depends_on:
-      - redis
+      - valkey
       - playwright-service
       - api
       - searxng
     command: [ "pnpm", "run", "workers" ]
 
-  redis:
-    image: redis:alpine
+  valkey:
+    image: valkey/valkey:alpine
     networks:
       - backend
-    command: redis-server --bind 0.0.0.0
     volumes:
-    - firecrawl-redis:/data
+    - firecrawl-valkey:/data
  
   searxng:
     container_name: searxng
@@ -88,4 +87,4 @@ networks:
   backend:
     driver: bridge
 volumes:
-  firecrawl-redis:
+  firecrawl-valkey:
