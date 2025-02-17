@@ -1,9 +1,9 @@
 services:
-  puppeteer-service:
+  hero-service:
     build:
       context: .
     ports:
-      - "3007:3000"
+      - "3000:3000"
     environment:
       - PORT=3000
       - MAX_CONCURRENCY=2

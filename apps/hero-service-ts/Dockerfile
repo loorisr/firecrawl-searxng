@@ -1,19 +1,16 @@
 FROM node:22-slim
 
-# Install pnpm globally
-RUN npm install -g pnpm
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
 
-# Copy package files
-COPY ./package.json ./pnpm-lock.yaml ./
+COPY . /app
+WORKDIR /app
 
-# Install dependencies
-RUN pnpm install # --frozen-lockfile
+RUN npm i -g corepack@latest & corepack enable
 
-# Copy the rest of the application
-COPY . .
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile && pnpm run build
 
-# Build the application
-RUN pnpm run build
+RUN /tmp/apt-install-chrome-dependencies.sh
 
 # Set up environment
 ARG PORT=3000

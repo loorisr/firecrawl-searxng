@@ -1,6 +1,6 @@
-# Playwright Scrape API
+# Playwright Hero Scrape API
 
-This is a simple web scraping service built with Express and Playwright.
+This is a simple web scraping service built with Express and Playwright and [Hero](https://ulixee.org/docs/hero).
 
 ## Features
 
@@ -22,12 +22,6 @@ npx playwright install
 ```bash
 pnpm run build
 pnpm start
-```
-
-OR
-
-```bash
-pnpm run dev
 ```
 
 ## USE

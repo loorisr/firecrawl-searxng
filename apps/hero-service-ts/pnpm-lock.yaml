@@ -9,38 +9,23 @@ importers:
   .:
     dependencies:
       '@ulixee/commons':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
+        specifier: 2.0.0-alpha.31
+        version: 2.0.0-alpha.31
       '@ulixee/hero':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
+        specifier: 2.0.0-alpha.31
+        version: 2.0.0-alpha.31
       '@ulixee/hero-core':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
+        specifier: 2.0.0-alpha.31
+        version: 2.0.0-alpha.31
       '@ulixee/hero-interfaces':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
+        specifier: 2.0.0-alpha.31
+        version: 2.0.0-alpha.31
       '@ulixee/hero-plugin-utils':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
+        specifier: 2.0.0-alpha.31
+        version: 2.0.0-alpha.31
       '@ulixee/net':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
-      '@ulixee/unblocked-agent':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
-      '@ulixee/unblocked-agent-mitm':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
-      '@ulixee/unblocked-agent-mitm-socket':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
-      '@ulixee/unblocked-specification':
-        specifier: 2.0.0-alpha.30
-        version: 2.0.0-alpha.30
-      better-sqlite3:
-        specifier: ^11.8.1
-        version: 11.8.1
+        specifier: 2.0.0-alpha.31
+        version: 2.0.0-alpha.31
       body-parser:
         specifier: ^1.20.3
         version: 1.20.3
@@ -57,9 +42,6 @@ importers:
         specifier: ^6.2.8
         version: 6.2.8(openapi-types@12.1.3)
     devDependencies:
-      '@types/better-sqlite3':
-        specifier: ^7.6.12
-        version: 7.6.12
       '@types/body-parser':
         specifier: ^1.19.5
         version: 1.19.5
@@ -146,9 +128,6 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
-  '@types/better-sqlite3@7.6.12':
-    resolution: {integrity: sha512-fnQmj8lELIj7BSrZQAdBMHEHX8OZLYIHXqAKT1O7tDfLxaINzf00PMjw22r3N/xXh0w/sGHlO6SVaCQ2mj78lg==}
-
   '@types/body-parser@1.19.5':
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
 
@@ -194,76 +173,72 @@ packages:
   '@ulixee/awaited-dom@1.4.2':
     resolution: {integrity: sha512-o32b+rBzB+6qPVzLK7wB0+TcPJ0BqM81zGmZ+dCCxDMGHo030ip0bW7TBf212YvCIEFDWJNIhrLTZ8SYZd1Dkw==}
 
-  '@ulixee/chrome-128-0@6613.138.11':
-    resolution: {integrity: sha512-efglwyxEq0UW/Qr6lvMi25aDwv8Ea4XwrLmd/MFPKAThZXI+vg6NoirT7lbtJ0RF02G6dvVX1OoEXnZH8rfQjg==}
+  '@ulixee/chrome-131-0@6778.265.11':
+    resolution: {integrity: sha512-mBOx7+erQLB2i18gr5UbatJKB4JhR74QETHgSc53JCi+Oqpw24PXg8OzLyHRbs25VTIe5g2GGYD7b9TidlLG5g==}
 
   '@ulixee/chrome-app@1.0.4':
     resolution: {integrity: sha512-OqRxzQCd5AWKtPp/AT6fY8PLRgOD3fIq8p+VR0ZDlIhWktDjr+6aefoj1KwSMUmPoRty3Y+8/ck31d/UZOiZ6w==}
     hasBin: true
 
-  '@ulixee/commons@2.0.0-alpha.30':
-    resolution: {integrity: sha512-6gvzPM7JWGPVfKFveEAZQZzKpjodb9yFrDZu8tNx8K32f3cCpFwvKvRJgX10zWMMtzoPAM3JAOMEtrPsrLpA2g==}
+  '@ulixee/commons@2.0.0-alpha.31':
+    resolution: {integrity: sha512-i78+ZxjYTKzvoV/qCywJYWiJwDJaqGop4jTqQ8Av7bjxLDSPlAF/VwmEvcH9X3sh65rPJJ58xK3UYP3fnsLBOA==}
     engines: {node: '>=18'}
 
-  '@ulixee/default-browser-emulator@2.0.0-alpha.30':
-    resolution: {integrity: sha512-bhmiLx2EiqGBiRnkI/RKcczvkCMgZmHV83XEqSkHmhVPVnaprBII+ZX/JbX3vRP/F0nc9k4IGga465W7oMNtqA==}
+  '@ulixee/default-browser-emulator@2.0.0-alpha.31':
+    resolution: {integrity: sha512-DARDBkUFMoFJm5F7/L+FhUhbfcjDL/17+jF42L+JusA0DtF5ynmTQcMI8AZ016GFUTlhzydghzo1BQjcXh9ISg==}
     engines: {node: '>=18'}
     hasBin: true
 
-  '@ulixee/default-human-emulator@2.0.0-alpha.30':
-    resolution: {integrity: sha512-UAWjhveXoDdJbT1jjS6sRSQ9VEdQOgeN65eYSHb8SNHgV8OPV9Mn4x9Nd7ynz4NxsiMqZzNKibznHBDujVPmBg==}
+  '@ulixee/default-human-emulator@2.0.0-alpha.31':
+    resolution: {integrity: sha512-EA3DMQs2ogCeMl1aJxnWsv6vyM8xq+GCEIXY3FoFBUch3MxQ0fjkLkmiVUS3coTNwQa2F4jZH/HFkFfXPJaRpg==}
     engines: {node: '>=18'}
 
-  '@ulixee/hero-core@2.0.0-alpha.30':
-    resolution: {integrity: sha512-HIbjZw8kFiUfhW7iYOft0VMOEKLy8MYnmYgqi4OUElqEy/DF2vzd9VB+Lr8eUdyxE8rovESVHtC2NFErhY76bg==}
+  '@ulixee/hero-core@2.0.0-alpha.31':
+    resolution: {integrity: sha512-EItEDlepPWPlSW6EZZ0oAq5XWjDlOwpRGVwgQd0W8IUtWNGWcnFXAS2gQ6ocOXrByqkgI45BX9ygMGWhWQ7oTQ==}
     engines: {node: '>=18'}
 
-  '@ulixee/hero-interfaces@2.0.0-alpha.30':
-    resolution: {integrity: sha512-x+a8sfH16Fpwjpoo6A+LUIAzUCU0kwJDCWS5EskSEhemmybPiOdVTCKYlvHVxDWwCB46TKhuzYDmZHSRxgI7OQ==}
+  '@ulixee/hero-interfaces@2.0.0-alpha.31':
+    resolution: {integrity: sha512-xVLQAFdbxLzBHjlR+BxUWmW8Az2IS5ifeXFVCBCzWcTAC65llz4voKfScGLBwumRM2IeHna3M2RTg/3i0s9TQw==}
     engines: {node: '>=18'}
 
-  '@ulixee/hero-plugin-utils@2.0.0-alpha.30':
-    resolution: {integrity: sha512-rceJ4/ZT0TWAx3U763LTYcbMqOeef829/YZr2ir/s2/tQr+Si2jPCdH85/psACcOpkJFqKBCnFM9xl9gUsql2w==}
+  '@ulixee/hero-plugin-utils@2.0.0-alpha.31':
+    resolution: {integrity: sha512-nPrC4fYFxKQax3FUAAe4Pvjm+Ek7q6OhXX6nB8YBRaOfVbkiozxySf+JHoRwQmboB/B0l7ZkZ2WN3604r1/osA==}
     engines: {node: '>=18'}
 
-  '@ulixee/hero-timetravel@2.0.0-alpha.30':
-    resolution: {integrity: sha512-XEVeh/Kf0Eh/JA/9YmxoVEp0bYcjKe3CbQnISy1l05ToQAo3c3ZXGNQBDGaFKMR5HY33IhTQBN8DUOEBeoaqQA==}
+  '@ulixee/hero-timetravel@2.0.0-alpha.31':
+    resolution: {integrity: sha512-fB5/ZwIeMTDJKRkB8Af7uy38p/u18Z+fpJTzUffa92VvPJTpey3JLShIY0dtOBokr1UmKaqd9R2Ch3NmTGyK6A==}
     engines: {node: '>=18'}
 
-  '@ulixee/hero@2.0.0-alpha.30':
-    resolution: {integrity: sha512-BIBHorilOKgNT3bC0ewP8C6kIE5GQ5JthyG9bZwyCaSh4nAruQQJUU/v7E8QHXqo2mYJMey1PSUAwZ2vCQbfwQ==}
-    engines: {node: '>=18'}
-
-  '@ulixee/js-path@2.0.0-alpha.30':
-    resolution: {integrity: sha512-5OpDNS5tk1dB68fy8sTmhU4j4uca8l6Xkuq/WcXgbpaY9uydbQMLuOw6PWWaScG9r2GyirRU2l62IUYlOAKoNA==}
+  '@ulixee/hero@2.0.0-alpha.31':
+    resolution: {integrity: sha512-hAIMA1Q5ppNlNIeNXQ0F3flQS/vR/JgSPAmJpJewVSMCJ+KqtGqCpRIEwuHUe089eV02/rI/a+3Sq2AEtfVYkA==}
     engines: {node: '>=18'}
 
   '@ulixee/js-path@2.0.0-alpha.31':
     resolution: {integrity: sha512-oKpI+bjjRKNKjCCjl3usiqyFSNN8PuyVGNXrH/QPJeriortKO8/0XAeh4qGuI005gP79IZqd75XDDVQdY95jLw==}
     engines: {node: '>=18'}
 
-  '@ulixee/net@2.0.0-alpha.30':
-    resolution: {integrity: sha512-ABwwxTBNYI/h1NOpyspFlTKlxgsdstLo+s18PQiZHkAObZUylLngG9bGWJoFA1XzwLVtLL93uvAzv8Bu1tG8CQ==}
+  '@ulixee/net@2.0.0-alpha.31':
+    resolution: {integrity: sha512-CvnsAgGnmJKWCZ+5+7FCM+lO5FyJC2mkwKGcRupnvezKavG27QrEiUlm3fnd7NzZGG45PHifgDee2jka+RErhQ==}
     engines: {node: '>=18'}
 
-  '@ulixee/real-user-agents@2.0.0-alpha.30':
-    resolution: {integrity: sha512-dIlm9NqX5ge1TgNh+gPtZ+GrgrXzsnoKmOVKPNqM0uRIhSuR75f5Zsaiw4uZVvTUJ8wSbsHVid6+/e2ZF1t2nQ==}
+  '@ulixee/real-user-agents@2.0.0-alpha.31':
+    resolution: {integrity: sha512-16DFtuCKLKB0vW1zrMU6b2/l6sbimnTMtt8su4J4BeBN5FpqB/RFYu2FzFtkbDN5efyAEaUKlFA/lMCqQ2VIXg==}
     engines: {node: '>=18'}
 
-  '@ulixee/unblocked-agent-mitm-socket@2.0.0-alpha.30':
-    resolution: {integrity: sha512-KGOArZQMnKVAeKxDLQa6EVPdg/YF7d1FMg5jCXvfxpknaF8rpsgYrVuYdIjYaf4UwLWnw6LgZjdPsHh9HZ4eig==}
+  '@ulixee/unblocked-agent-mitm-socket@2.0.0-alpha.31':
+    resolution: {integrity: sha512-IQZEeMOPqfB4c+o8Ddhz9o9RW11qRDWjgEci5hbC62GTtDIc/PwDx1BsL8udlHFTBn71JWaf0Rbzi05qIxseXw==}
     engines: {node: '>=18'}
 
-  '@ulixee/unblocked-agent-mitm@2.0.0-alpha.30':
-    resolution: {integrity: sha512-3t+4t3EZZYKBbvCkOTZhFP7cMjEQ1zFEJZrswyN3nTIRBWneycst0Q28yc2I5idcRBfQcbUCjQTA2nU2V5GimQ==}
+  '@ulixee/unblocked-agent-mitm@2.0.0-alpha.31':
+    resolution: {integrity: sha512-JhHNYcbeOWh48cqmYBFXhCgdeEUjR6bfRU9Kgid7TYAZUZTbIF+iQyrceJ50CpN9274bBF29BW7v3f4RD8jnuw==}
     engines: {node: '>=18'}
 
-  '@ulixee/unblocked-agent@2.0.0-alpha.30':
-    resolution: {integrity: sha512-ZlYngOz94j1vvLEeDX9u2Z1l45v/FvlIDeGQOZ9SdUOfEdV/g8RExhnQeUVVPJGfNOm3LoDT5yVxRh+o9IUySg==}
+  '@ulixee/unblocked-agent@2.0.0-alpha.31':
+    resolution: {integrity: sha512-DMwhcHYLYL8DpBwThCnIEolJ0yV8j3n01b6oRWh72s1OVAIYe0528/3Gv2GhLArvB0tu/NqIv519Uh9DFm09ig==}
     engines: {node: '>=18'}
 
-  '@ulixee/unblocked-specification@2.0.0-alpha.30':
-    resolution: {integrity: sha512-u02Q3RBm33m/KpA8fkwCJOhnJOhX3BOkMdDPsTbPDYTaJATw+H55UPkpo/r+yBF8b7QoYZIJpWL3AxiIspJeNQ==}
+  '@ulixee/unblocked-specification@2.0.0-alpha.31':
+    resolution: {integrity: sha512-Nx37nkeiuMqJPUkl88K97gxwOlOckJGI7wlTrwIj+uzGijXIjOcWLxIl+saw1w5r0U1FUGmTUggLamTHfQ56oA==}
     engines: {node: '>=18'}
 
   accepts@1.3.8:
@@ -623,6 +598,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -797,22 +773,12 @@ packages:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
     engines: {node: '>= 0.10'}
 
-  psl@1.15.0:
-    resolution: {integrity: sha512-JZd3gMVBAVQkSs6HdNZo9Sdo0LNcQeMNP3CozBJb3JYC/QUYZTnKxP+f8oWRX4rHP5EurWxqAHTSwUCjlNKa1w==}
-
   pump@3.0.2:
     resolution: {integrity: sha512-tUPXtzlGM8FE3P0ZL6DVs/3P58k9nk8/jZeQCurTJylQA8qFYzHFfhBJkuqyE0FifOsQ0uKWekiZ5g8wtr28cw==}
-
-  punycode@2.3.1:
-    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
-    engines: {node: '>=6'}
 
   qs@6.13.0:
     resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
     engines: {node: '>=0.6'}
-
-  querystringify@2.2.0:
-    resolution: {integrity: sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==}
 
   range-parser@1.2.1:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
@@ -832,9 +798,6 @@ packages:
 
   redoc-express@2.1.0:
     resolution: {integrity: sha512-gq6FvghNirD3dCJ7w8Z6escXYHnU1Hk50baQsIeGunQQ9YRoy6qR/MjEOJtDEKaPNB2NgkIzQ9ESNX5/27zkDA==}
-
-  requires-port@1.0.0:
-    resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
 
   rimraf@5.0.10:
     resolution: {integrity: sha512-l0OE8wL34P4nJH/H2ffoaniAokM2qSmrtXHmlpvYr5AVVX8msAyW0l8NVJFDxlSK4u3Uh/f41cQheDVdnYijwQ==}
@@ -935,13 +898,20 @@ packages:
     resolution: {integrity: sha512-5S7Va8hKfV7W5U6g3aYxXmlPoZVAwUMy9AOKyF2fVuZa2UD3qZjg578OrLRt8PcNN1PleVaL/5/yYATNL0ICUw==}
     engines: {node: '>=18'}
 
+  tldts-core@6.1.77:
+    resolution: {integrity: sha512-bCaqm24FPk8OgBkM0u/SrEWJgHnhBWYqeBo6yUmcZJDCHt/IfyWBb+14CXdGi4RInMv4v7eUAin15W0DoA+Ytg==}
+
+  tldts@6.1.77:
+    resolution: {integrity: sha512-lBpoWgy+kYmuXWQ83+R7LlJCnsd9YW8DGpZSHhrMl4b8Ly/1vzOie3OdtmUJDkKxcgRGOehDu5btKkty+JEe+g==}
+    hasBin: true
+
   toidentifier@1.0.1:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
 
-  tough-cookie@4.1.4:
-    resolution: {integrity: sha512-Loo5UUvLD9ScZ6jh8beX1T6sO1w2/MpCRpEP7V280GKMVUQ0Jzar2U3UJPsrdbziLEMMhu3Ujnq//rhiFuIeag==}
-    engines: {node: '>=6'}
+  tough-cookie@5.1.1:
+    resolution: {integrity: sha512-Ek7HndSVkp10hmHP9V4qZO1u+pn1RU5sI0Fw+jCU3lyvuMZcgqsNgc6CmJJZyByK4Vm/qotGRJlfgAX8q+4JiA==}
+    engines: {node: '>=16'}
 
   ts-node@10.9.2:
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
@@ -979,16 +949,9 @@ packages:
   undici-types@6.20.0:
     resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
-  universalify@0.2.0:
-    resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
-    engines: {node: '>= 4.0.0'}
-
   unpipe@1.0.0:
     resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
-
-  url-parse@1.5.10:
-    resolution: {integrity: sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==}
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
@@ -1122,10 +1085,6 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@types/better-sqlite3@7.6.12':
-    dependencies:
-      '@types/node': 22.13.4
-
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
@@ -1182,7 +1141,7 @@ snapshots:
     dependencies:
       '@ulixee/js-path': 2.0.0-alpha.31
 
-  '@ulixee/chrome-128-0@6613.138.11':
+  '@ulixee/chrome-131-0@6778.265.11':
     dependencies:
       '@ulixee/chrome-app': 1.0.4
     transitivePeerDependencies:
@@ -1196,7 +1155,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/commons@2.0.0-alpha.30':
+  '@ulixee/commons@2.0.0-alpha.31':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       bech32: 2.0.0
@@ -1206,42 +1165,42 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/default-browser-emulator@2.0.0-alpha.30':
+  '@ulixee/default-browser-emulator@2.0.0-alpha.31':
     dependencies:
       '@ulixee/chrome-app': 1.0.4
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/real-user-agents': 2.0.0-alpha.30
-      '@ulixee/unblocked-agent-mitm-socket': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/real-user-agents': 2.0.0-alpha.31
+      '@ulixee/unblocked-agent-mitm-socket': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       compare-versions: 6.1.1
       nanoid: 3.3.7
       tar: 7.4.3
-      tough-cookie: 4.1.4
+      tough-cookie: 5.1.1
       ua-parser-js: 1.0.39
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/default-human-emulator@2.0.0-alpha.30':
+  '@ulixee/default-human-emulator@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/hero-core@2.0.0-alpha.30':
+  '@ulixee/hero-core@2.0.0-alpha.31':
     dependencies:
       '@ulixee/awaited-dom': 1.4.2
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/default-browser-emulator': 2.0.0-alpha.30
-      '@ulixee/default-human-emulator': 2.0.0-alpha.30
-      '@ulixee/hero-interfaces': 2.0.0-alpha.30
-      '@ulixee/hero-plugin-utils': 2.0.0-alpha.30
-      '@ulixee/hero-timetravel': 2.0.0-alpha.30
-      '@ulixee/js-path': 2.0.0-alpha.30
-      '@ulixee/net': 2.0.0-alpha.30
-      '@ulixee/unblocked-agent': 2.0.0-alpha.30
-      '@ulixee/unblocked-agent-mitm': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/default-browser-emulator': 2.0.0-alpha.31
+      '@ulixee/default-human-emulator': 2.0.0-alpha.31
+      '@ulixee/hero-interfaces': 2.0.0-alpha.31
+      '@ulixee/hero-plugin-utils': 2.0.0-alpha.31
+      '@ulixee/hero-timetravel': 2.0.0-alpha.31
+      '@ulixee/js-path': 2.0.0-alpha.31
+      '@ulixee/net': 2.0.0-alpha.31
+      '@ulixee/unblocked-agent': 2.0.0-alpha.31
+      '@ulixee/unblocked-agent-mitm': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       better-sqlite3: 11.8.1
       moment: 2.30.1
       nanoid: 3.3.7
@@ -1251,112 +1210,110 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@ulixee/hero-interfaces@2.0.0-alpha.30':
+  '@ulixee/hero-interfaces@2.0.0-alpha.31':
     dependencies:
       '@ulixee/awaited-dom': 1.4.2
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/js-path': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/js-path': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       devtools-protocol: 0.0.1137505
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/hero-plugin-utils@2.0.0-alpha.30':
+  '@ulixee/hero-plugin-utils@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/hero-interfaces': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/hero-interfaces': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/hero-timetravel@2.0.0-alpha.30':
+  '@ulixee/hero-timetravel@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/hero-core': 2.0.0-alpha.30
-      '@ulixee/hero-interfaces': 2.0.0-alpha.30
-      '@ulixee/unblocked-agent': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/hero-core': 2.0.0-alpha.31
+      '@ulixee/hero-interfaces': 2.0.0-alpha.31
+      '@ulixee/unblocked-agent': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       nanoid: 3.3.7
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - utf-8-validate
 
-  '@ulixee/hero@2.0.0-alpha.30':
+  '@ulixee/hero@2.0.0-alpha.31':
     dependencies:
       '@ulixee/awaited-dom': 1.4.2
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/hero-interfaces': 2.0.0-alpha.30
-      '@ulixee/hero-plugin-utils': 2.0.0-alpha.30
-      '@ulixee/js-path': 2.0.0-alpha.30
-      '@ulixee/net': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/hero-interfaces': 2.0.0-alpha.31
+      '@ulixee/hero-plugin-utils': 2.0.0-alpha.31
+      '@ulixee/js-path': 2.0.0-alpha.31
+      '@ulixee/net': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       linkedom: 0.14.26
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - utf-8-validate
 
-  '@ulixee/js-path@2.0.0-alpha.30': {}
-
   '@ulixee/js-path@2.0.0-alpha.31': {}
 
-  '@ulixee/net@2.0.0-alpha.30':
+  '@ulixee/net@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/commons': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - utf-8-validate
 
-  '@ulixee/real-user-agents@2.0.0-alpha.30':
+  '@ulixee/real-user-agents@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       compare-versions: 6.1.1
       ua-parser-js: 1.0.39
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/unblocked-agent-mitm-socket@2.0.0-alpha.30':
+  '@ulixee/unblocked-agent-mitm-socket@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       nanoid: 3.3.7
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/unblocked-agent-mitm@2.0.0-alpha.30':
+  '@ulixee/unblocked-agent-mitm@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/unblocked-agent-mitm-socket': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/unblocked-agent-mitm-socket': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       dns-packet: 5.6.1
       moment: 2.30.1
     transitivePeerDependencies:
       - supports-color
 
-  '@ulixee/unblocked-agent@2.0.0-alpha.30':
+  '@ulixee/unblocked-agent@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/chrome-128-0': 6613.138.11
+      '@ulixee/chrome-131-0': 6778.265.11
       '@ulixee/chrome-app': 1.0.4
-      '@ulixee/commons': 2.0.0-alpha.30
-      '@ulixee/js-path': 2.0.0-alpha.30
-      '@ulixee/unblocked-agent-mitm': 2.0.0-alpha.30
-      '@ulixee/unblocked-specification': 2.0.0-alpha.30
+      '@ulixee/commons': 2.0.0-alpha.31
+      '@ulixee/js-path': 2.0.0-alpha.31
+      '@ulixee/unblocked-agent-mitm': 2.0.0-alpha.31
+      '@ulixee/unblocked-specification': 2.0.0-alpha.31
       devtools-protocol: 0.0.1137505
       nanoid: 3.3.7
-      tough-cookie: 4.1.4
+      tough-cookie: 5.1.1
       ws: 8.18.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - utf-8-validate
 
-  '@ulixee/unblocked-specification@2.0.0-alpha.30':
+  '@ulixee/unblocked-specification@2.0.0-alpha.31':
     dependencies:
-      '@ulixee/js-path': 2.0.0-alpha.30
+      '@ulixee/js-path': 2.0.0-alpha.31
       devtools-protocol: 0.0.1137505
 
   accepts@1.3.8:
@@ -1885,22 +1842,14 @@ snapshots:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
 
-  psl@1.15.0:
-    dependencies:
-      punycode: 2.3.1
-
   pump@3.0.2:
     dependencies:
       end-of-stream: 1.4.4
       once: 1.4.0
 
-  punycode@2.3.1: {}
-
   qs@6.13.0:
     dependencies:
       side-channel: 1.0.6
-
-  querystringify@2.2.0: {}
 
   range-parser@1.2.1: {}
 
@@ -1925,8 +1874,6 @@ snapshots:
       util-deprecate: 1.0.2
 
   redoc-express@2.1.0: {}
-
-  requires-port@1.0.0: {}
 
   rimraf@5.0.10:
     dependencies:
@@ -2068,14 +2015,17 @@ snapshots:
       mkdirp: 3.0.1
       yallist: 5.0.0
 
+  tldts-core@6.1.77: {}
+
+  tldts@6.1.77:
+    dependencies:
+      tldts-core: 6.1.77
+
   toidentifier@1.0.1: {}
 
-  tough-cookie@4.1.4:
+  tough-cookie@5.1.1:
     dependencies:
-      psl: 1.15.0
-      punycode: 2.3.1
-      universalify: 0.2.0
-      url-parse: 1.5.10
+      tldts: 6.1.77
 
   ts-node@10.9.2(@types/node@22.13.4)(typescript@5.7.3):
     dependencies:
@@ -2112,14 +2062,7 @@ snapshots:
 
   undici-types@6.20.0: {}
 
-  universalify@0.2.0: {}
-
   unpipe@1.0.0: {}
-
-  url-parse@1.5.10:
-    dependencies:
-      querystringify: 2.2.0
-      requires-port: 1.0.0
 
   util-deprecate@1.0.2: {}
 
