@@ -8,9 +8,13 @@ WORKDIR /app
 
 RUN npm i -g corepack@latest & corepack enable
 
+# to build better-sqlite3
+RUN apt-get install build-essential python3 -y
+
 #RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile && pnpm run build
 RUN pnpm install --frozen-lockfile && pnpm run build
 
+# to install chrome dependencies
 RUN /tmp/apt-install-chrome-dependencies.sh
 
 # Set up environment
