@@ -4,6 +4,10 @@ This fork adds [SearXNG](https://github.com/searxng/searxng) compatibility for t
 
 ***Firecrawl v1.5.0 now includes the SearXNG endpoint https://github.com/mendableai/firecrawl/releases/tag/v1.5.0***
 
+***Most of the changes of this repo have been made in the Firecrawl official repo. Thanks to the team!***
+
+***Instead of playwright-service-ts you can use https://github.com/loorisr/patchright-scrape-api***
+
 New env variable:
 * `SEARXNG_ENDPOINT=https://your-searxng-instance`
 * `SEARXNG_CATEGORIES` see https://docs.searxng.org/user/configured_engines.html
