@@ -24,4 +24,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ github.repository }}:latest
+          tags: ${{ github.repository }}:api-latest              
+          file: apps/api/Dockerfile
