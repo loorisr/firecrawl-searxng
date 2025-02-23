@@ -1,18 +1,3 @@
-FROM node:22-slim AS base
-
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-
-RUN corepack enable
-COPY . /app
-WORKDIR /app
-
-FROM base AS prod-deps
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
-
-FROM base AS build
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install && pnpm run build
-
 # Install Go
 FROM golang:1.24 AS go-base
 COPY sharedLibs/go-html-to-md /app/sharedLibs/go-html-to-md
@@ -31,6 +16,24 @@ COPY sharedLibs/html-transformer /app/sharedLibs/html-transformer
 RUN cd /app/sharedLibs/html-transformer && \
     cargo build --release && \
     chmod +x target/release/libhtml_transformer.so
+
+FROM node:22-slim AS base
+
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+
+RUN corepack enable
+
+WORKDIR /app
+COPY package.json pnpm-lock.yaml .
+
+FROM base AS prod-deps
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
+
+FROM base AS build
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+COPY . .
+RUN pnpm build
 
 FROM base
 COPY --from=build /app/dist /app/dist
